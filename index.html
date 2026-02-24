@@ -35,14 +35,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 /* Photo fills right half, absolutely */
 .hero-photo{
   position:absolute;
-  right:0; top:-60px; bottom:0;
+  right:0; top:0; bottom:0;
   width:55%;
   z-index:0;
 }
 .hero-photo img{
   width:100%; height:100%;
   object-fit:cover;
-  object-position:60% 0%;
+  object-position:60% 22%;
   opacity:.92;
 }
 /* Fade photo into black on left side */
@@ -113,13 +113,13 @@ section{padding:7rem 3rem;}
 .metric-card:hover{background:rgba(201,168,76,.04);}
 .metric-card::after{content:'';position:absolute;bottom:0;left:0;height:2px;width:0;background:var(--gold);transition:width .4s ease;}
 .metric-card:hover::after{width:100%;}
-.metric-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.08;transition:opacity .3s;}
+.metric-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.12;filter:grayscale(30%);z-index:0;}
 .metric-card:hover .metric-bg{opacity:.15;}
 .metric-card>*:not(.metric-bg){position:relative;z-index:1;}
-.metric-club{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:1.5rem;font-weight:500;color:var(--gold-light);}
-.metric-main{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--gold);line-height:1;margin-bottom:.5rem;}
-.metric-desc{font-size:.88rem;font-weight:500;opacity:.9;line-height:1.6;margin-bottom:.8rem;}
-.metric-detail{font-size:.78rem;opacity:.55;border-top:1px solid var(--border);padding-top:.8rem;line-height:1.8;}
+.metric-club{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:1.5rem;font-weight:500;color:var(--gold-light);position:relative;z-index:1;}
+.metric-main{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--gold);line-height:1;margin-bottom:.5rem;position:relative;z-index:1;}
+.metric-desc{font-size:.88rem;font-weight:500;opacity:.9;line-height:1.6;margin-bottom:.8rem;position:relative;z-index:1;}
+.metric-detail{font-size:.78rem;opacity:.55;border-top:1px solid var(--border);padding-top:.8rem;line-height:1.8;position:relative;z-index:1;}
 .metric-detail ul{list-style:none;}
 .metric-detail ul li::before{content:"· ";color:var(--gold);}
 /* EXP LAYOUT WITH TACTICAL FIELD */
@@ -358,28 +358,28 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
   <div class="section-title" data-pt="Impacto Imediato" data-en="Immediate Impact">Impacto Imediato</div>
   <div class="metrics-grid">
     <div class="metric-card">
-      <div class="metric-bg" style="background-image:none"></div>
+      <div class="metric-bg" style="background-image:url('metric-serpa-2122.jpg')"></div>
       <div class="metric-club">FC Serpa · 2021/22</div>
       <div class="metric-main">+51,1%</div>
       <div class="metric-desc" data-pt="Pontos conquistados após chegada a meio de época" data-en="Points won after joining mid-season">Pontos conquistados após chegada a meio de época</div>
       <div class="metric-detail"><ul><li data-pt="0,38 → 1,73 golos/jogo" data-en="0.38 → 1.73 goals/match">0,38 → 1,73 golos/jogo</li><li data-pt="Manutenção conquistada" data-en="Relegation avoided">Manutenção conquistada</li></ul></div>
     </div>
     <div class="metric-card">
-      <div class="metric-bg" style="background-image:none"></div>
+      <div class="metric-bg" style="background-image:url('metric-serpa-2223.jpg')"></div>
       <div class="metric-club">FC Serpa · 2022/23</div>
       <div class="metric-main">Top 8</div>
       <div class="metric-desc" data-pt="Referência ofensiva no campeonato" data-en="Offensive benchmark in the league">Referência ofensiva no campeonato</div>
       <div class="metric-detail"><ul><li data-pt="1,69 golos/jogo" data-en="1.69 goals/match">1,69 golos/jogo</li><li data-pt="46,2% dos pontos totais" data-en="46.2% of total points">46,2% dos pontos totais</li><li data-pt="Manutenção conquistada" data-en="Relegation avoided">Manutenção conquistada</li></ul></div>
     </div>
     <div class="metric-card">
-      <div class="metric-bg" style="background-image:none"></div>
+      <div class="metric-bg" style="background-image:url('metric-vidigueira.jpg')"></div>
       <div class="metric-club">CFVG Vidigueira · 2018–20</div>
       <div class="metric-main">2.º</div>
       <div class="metric-desc" data-pt="Subida exponencial na classificação" data-en="Exponential rise in the standings">Subida exponencial na classificação</div>
       <div class="metric-detail"><ul><li data-pt="Crescimento ofensivo sustentado" data-en="Sustained offensive growth">Crescimento ofensivo sustentado</li><li data-pt="2.º lugar campeonato distrital" data-en="2nd place district championship">2.º lugar campeonato distrital</li></ul></div>
     </div>
     <div class="metric-card">
-      <div class="metric-bg" style="background-image:none;background-position:center top;"></div>
+      <div class="metric-bg" style="background-image:url('metric-piense.jpg')"></div>
       <div class="metric-club">Piense SC · 2013–16</div>
       <div class="metric-main">🏆</div>
       <div class="metric-desc" data-pt="Vencedor da Taça Distrital" data-en="District Cup winner">Vencedor da Taça Distrital</div>
