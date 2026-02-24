@@ -42,7 +42,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .hero-photo img{
   width:100%; height:100%;
   object-fit:cover;
-  object-position:60% 15%;
+  object-position:60% 8%;
   opacity:.92;
 }
 /* Fade photo into black on left side */
@@ -125,8 +125,8 @@ section{padding:7rem 3rem;}
 /* EXP LAYOUT WITH TACTICAL FIELD */
 .exp-layout{display:flex;gap:1.5rem;align-items:flex-start;}
 .exp-layout>.timeline{flex:1;min-width:0;}
-.tactic-field-wrap{width:300px;flex-shrink:0;position:sticky;top:8rem;opacity:.65;overflow:visible;align-self:flex-start;margin-top:1rem;}
-.tactic-field-svg{width:120%;height:auto;display:block;transform:rotate(-20deg);transform-origin:left top;margin-left:-10%;}
+.tactic-field-wrap{width:240px;flex-shrink:0;position:sticky;top:8rem;opacity:.65;overflow:visible;align-self:flex-start;margin-top:0;}
+.tactic-field-svg{width:100%;height:auto;display:block;transform:rotate(-15deg);transform-origin:center top;}
 @media(max-width:1100px){.tactic-field-wrap{display:none;}}
 /* TIMELINE */
 #experiencia{background:#080808;}
@@ -334,7 +334,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
   <div class="hero-right">
     <div class="hero-quote-card anim anim-d4">
       <p data-pt='"É realmente um prazer recomendar o João Rico. É orientado para o pormenor — um workaholic que combina o conhecimento académico com a prática, tanto no treino como na competição."'
-         data-en='"It's a pleasure to recommend João Rico. He is detail-oriented — a workaholic who combines academic knowledge with practice, both in training and competition."'>
+         data-en='"A genuine pleasure to recommend João Rico. Detail-oriented — a workaholic who combines academic knowledge with practice, both in training and competition."'>
         "É realmente um prazer recomendar o João Rico. É orientado para o pormenor — um workaholic que combina o conhecimento académico com a prática, tanto no treino como na competição."
       </p>
       <div class="quote-author">
@@ -362,28 +362,28 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
       <div class="metric-club">FC Serpa · 2021/22</div>
       <div class="metric-main">+51,1%</div>
       <div class="metric-desc" data-pt="Pontos conquistados após chegada a meio de época" data-en="Points won after joining mid-season">Pontos conquistados após chegada a meio de época</div>
-      <div class="metric-detail"><ul><li>0,38 → 1,73 golos/jogo</li><li>Manutenção conquistada</li></ul></div>
+      <div class="metric-detail"><ul><li data-pt="0,38 → 1,73 golos/jogo" data-en="0.38 → 1.73 goals/match">0,38 → 1,73 golos/jogo</li><li data-pt="Manutenção conquistada" data-en="Relegation avoided">Manutenção conquistada</li></ul></div>
     </div>
     <div class="metric-card">
       <div class="metric-bg" style="background-image:none"></div>
       <div class="metric-club">FC Serpa · 2022/23</div>
       <div class="metric-main">Top 8</div>
       <div class="metric-desc" data-pt="Referência ofensiva no campeonato" data-en="Offensive benchmark in the league">Referência ofensiva no campeonato</div>
-      <div class="metric-detail"><ul><li>1,69 golos/jogo</li><li>46,2% dos pontos totais</li><li>Manutenção conquistada</li></ul></div>
+      <div class="metric-detail"><ul><li data-pt="1,69 golos/jogo" data-en="1.69 goals/match">1,69 golos/jogo</li><li data-pt="46,2% dos pontos totais" data-en="46.2% of total points">46,2% dos pontos totais</li><li data-pt="Manutenção conquistada" data-en="Relegation avoided">Manutenção conquistada</li></ul></div>
     </div>
     <div class="metric-card">
       <div class="metric-bg" style="background-image:none"></div>
       <div class="metric-club">CFVG Vidigueira · 2018–20</div>
       <div class="metric-main">2.º</div>
       <div class="metric-desc" data-pt="Subida exponencial na classificação" data-en="Exponential rise in the standings">Subida exponencial na classificação</div>
-      <div class="metric-detail"><ul><li>Crescimento ofensivo sustentado</li><li>2.º lugar campeonato distrital</li></ul></div>
+      <div class="metric-detail"><ul><li data-pt="Crescimento ofensivo sustentado" data-en="Sustained offensive growth">Crescimento ofensivo sustentado</li><li data-pt="2.º lugar campeonato distrital" data-en="2nd place district championship">2.º lugar campeonato distrital</li></ul></div>
     </div>
     <div class="metric-card">
       <div class="metric-bg" style="background-image:none;background-position:center top;"></div>
       <div class="metric-club">Piense SC · 2013–16</div>
       <div class="metric-main">🏆</div>
       <div class="metric-desc" data-pt="Vencedor da Taça Distrital" data-en="District Cup winner">Vencedor da Taça Distrital</div>
-      <div class="metric-detail"><ul><li>Penúltimo lugar → 6.º lugar</li><li>Finalista e Campeão</li></ul></div>
+      <div class="metric-detail"><ul><li data-pt="Penúltimo lugar → 6.º lugar" data-en="Second-to-last → 6th place">Penúltimo lugar → 6.º lugar</li><li data-pt="Finalista e Campeão" data-en="Finalist and Champion">Finalista e Campeão</li></ul></div>
     </div>
   </div>
 </section>
@@ -544,10 +544,9 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
   <div class="section-title" data-pt="Testemunhos" data-en="Testimonials">Testemunhos</div>
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <p class="testimonial-quote"
-         data-pt='"É realmente um prazer recomendar uma pessoa e um treinador como o João Rico. Conheço-o muito bem, assim como o excelente trabalho que desenvolveu nas últimas épocas. É aquele tipo de profissional que é orientado para o pormenor. É definitivamente um \"workaholic\" que combina o conhecimento (da sua vasta formação académica) com a prática, tanto no treino como na competição."'
-         data-en='"It\'s really a pleasure to recommend such a person and a coach like João Rico. I know him very well, so as the great work he developed for the last seasons. He is that type of professional that is detail oriented — a workaholic that combines knowledge with practice both in training and competition."'>
-        "É realmente um prazer recomendar uma pessoa e um treinador como o João Rico. Conheço-o muito bem, assim como o excelente trabalho que desenvolveu nas últimas épocas. É aquele tipo de profissional que é orientado para o pormenor. É definitivamente um \"workaholic\" que combina o conhecimento (da sua vasta formação académica) com a prática, tanto no treino como na competição."
+      <p data-pt='"É realmente um prazer recomendar o João Rico. É orientado para o pormenor — um workaholic que combina o conhecimento académico com a prática, tanto no treino como na competição."'
+         data-en='"A genuine pleasure to recommend João Rico. Detail-oriented — a workaholic who combines academic knowledge with practice, both in training and competition."'>
+        "É realmente um prazer recomendar o João Rico. É orientado para o pormenor — um workaholic que combina o conhecimento académico com a prática, tanto no treino como na competição."
       </p>
       <div class="testimonial-person">
         <img class="testimonial-avatar" src="data:image/jpeg;base64,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" alt="Pedro Caixinha">
