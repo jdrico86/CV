@@ -211,12 +211,12 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
   .hero-left{padding:7rem 1.5rem 2rem;}
   .hero-right{padding:0 1.5rem 4rem;align-items:flex-start;}
   .hero-photo{
-    width:65%;
+    width:45%;
     right:0; left:auto;
     opacity:1;
   }
   .hero-photo img{
-    object-position:30% 15%;
+    object-position:center 15%;
     opacity:0.55;
   }
   .hero-photo::before{
@@ -239,8 +239,6 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;align-item
   .nav-cta{display:none;}
 
   /* Hero */
-  .hero-photo{width:70%;}
-  .hero-photo img{object-position:25% 15%;}
   .hero h1{font-size:clamp(3rem,16vw,4.5rem);}
   .hero-desc{font-size:.92rem;}
   .hero-stats{gap:1.5rem;}
@@ -679,6 +677,15 @@ function setLang(lang) {
     el.innerHTML = el.dataset[lang];
   });
 }
+
+// Detect ?lang=en in URL on page load
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const lang = params.get('lang');
+  if (lang === 'en') {
+    setLang('en');
+  }
+})();
 </script>
 </body>
 </html>
